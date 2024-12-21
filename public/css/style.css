@@ -1,0 +1,64 @@
+.grid-card {
+  margin-top: 25px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  gap: 20px;
+  padding: 0 170px;
+  place-content: center;
+}
+.grid-card .card {
+  box-shadow: rgba(78, 83, 86, 0.3) 0px 0px 0px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
+  border-radius: 5px;
+
+}
+.grid-card .card .top {
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.grid-card .card .top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s;
+}
+.grid-card .card .top img:hover {
+  transform: scale(1.2);
+  color: rgb(107, 107, 107);
+}
+.grid-card .card .bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.grid-card .card .bottom span:first-child {
+  font-weight: 700;
+  font-size: 17px;
+}
+.grid-card .card .bottom span:nth-child(2) {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(143, 4, 4);
+}
+.grid-card .card .bottom span:nth-child(3) {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(143, 4, 4);
+}
+.grid-card .card .bottom a {
+  text-decoration: none;
+  border: 1px solid #323232;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  color: #000;
+  transition: 0.2s;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.grid-card .card .bottom a:hover {
+  background-color: rgb(219, 221, 222);
+}
+
